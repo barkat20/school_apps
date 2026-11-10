@@ -1,0 +1,323 @@
+// Aymo Variables
+$aymo-dark-navy: #22334F;
+$aymo-dark-teal: #4A8491;
+$aymo-light-teal: #74C5C0;
+$aymo-pale-blue: #D4E9E6;
+
+// 1. Smooth Main Navbar (Top Menu)
+.o_main_navbar {
+    background-color: white !important;
+    border-bottom: 3px solid $aymo-light-teal !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+
+    // Override Odoo 18 CSS Variables
+    --NavBar-entry-backgroundColor: transparent;
+    --NavBar-entry-backgroundColor--hover: #{$aymo-pale-blue};
+    --NavBar-entry-backgroundColor--focus: #{$aymo-pale-blue};
+    --NavBar-entry-backgroundColor--active: #{$aymo-pale-blue};
+    --NavBar-entry-borderColor-active: transparent;
+    --NavBar-entry-color: #{$aymo-dark-navy};
+    --NavBar-entry-color--active: #{$aymo-dark-teal};
+
+    & > a, & > button, & > div > a, & > div > button,
+    .o_menu_brand, .dropdown-toggle, .o_nav_entry {
+        color: $aymo-dark-navy !important;
+        background-color: transparent !important;
+        
+        &:hover, &:focus {
+            color: $aymo-dark-teal !important;
+            background-color: $aymo-pale-blue !important;
+        }
+    }
+    
+    // Logo styling for Aymo
+    // If the user hasn't uploaded a company logo, or we want to enforce it,
+    // we can add subtle padding to the logo container
+    .o_menu_brand_logo {
+        border-radius: 4px;
+        padding: 2px;
+    }
+}
+
+// 2. Smooth Form Sheets (The main white canvas in forms)
+.o_form_sheet {
+    border-radius: 12px !important;
+    box-shadow: 0 8px 24px rgba(34, 51, 79, 0.06) !important;
+    border: 1px solid rgba($aymo-light-teal, 0.2) !important;
+    padding: 24px !important;
+    margin-top: 16px !important;
+}
+
+// 3. Smooth Inputs and Fields
+input.o_input, select.o_input, textarea.o_input {
+    border-radius: 8px !important;
+    border: 1px solid $aymo-pale-blue !important;
+    background-color: #FAFCFC !important;
+    transition: all 0.2s ease-in-out;
+    padding: 6px 12px;
+
+    &:focus {
+        border-color: $aymo-light-teal !important;
+        background-color: white !important;
+        box-shadow: 0 0 0 3px rgba($aymo-light-teal, 0.2) !important;
+    }
+}
+
+// 4. Attractive Buttons
+.btn {
+    border-radius: 8px !important;
+    transition: all 0.3s ease !important;
+    font-weight: 500 !important;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, $aymo-dark-teal, $aymo-light-teal) !important;
+    border: none !important;
+    color: white !important;
+    box-shadow: 0 4px 10px rgba($aymo-dark-teal, 0.3) !important;
+    
+    // Smooth hover effect
+    &:hover, &:active, &:focus {
+        background: linear-gradient(135deg, darken($aymo-dark-teal, 5%), $aymo-dark-teal) !important;
+        transform: translateY(-1px);
+        box-shadow: 0 6px 14px rgba($aymo-dark-teal, 0.4) !important;
+    }
+}
+
+.btn-secondary {
+    background-color: white !important;
+    color: $aymo-dark-navy !important;
+    border: 1px solid $aymo-pale-blue !important;
+    
+    &:hover {
+        background-color: $aymo-pale-blue !important;
+        border-color: $aymo-light-teal !important;
+        color: $aymo-dark-teal !important;
+    }
+}
+
+// 5. Header / Statusbar smoothing
+.o_statusbar_status {
+    .o_arrow_button {
+        color: $aymo-dark-navy;
+        transition: all 0.3s ease;
+        
+        &.btn-primary.disabled {
+            background-color: rgba($aymo-pale-blue, 0.5) !important;
+            color: $aymo-dark-teal !important;
+            font-weight: 600 !important;
+            border-bottom: 2px solid $aymo-dark-teal !important;
+        }
+
+        &:not(.disabled):hover {
+            color: $aymo-dark-teal !important;
+        }
+    }
+}
+
+// Notebook (Tabs) styling
+.nav-tabs {
+    border-bottom: 2px solid $aymo-pale-blue !important;
+    
+    .nav-link {
+        color: $aymo-dark-navy !important;
+        border: none !important;
+        border-radius: 8px 8px 0 0 !important;
+        padding: 10px 16px !important;
+        margin-right: 4px;
+        transition: all 0.2s ease;
+        
+        &.active {
+            color: $aymo-dark-teal !important;
+            background-color: transparent !important;
+            border-bottom: 3px solid $aymo-dark-teal !important;
+            font-weight: bold;
+        }
+        
+        &:hover:not(.active) {
+            background-color: $aymo-pale-blue !important;
+            color: $aymo-dark-teal !important;
+        }
+    }
+}
+
+// Tree / List Views
+.o_list_view {
+    .table-responsive {
+        border-radius: 12px !important;
+        border: 1px solid rgba($aymo-light-teal, 0.2) !important;
+        box-shadow: 0 4px 12px rgba(34, 51, 79, 0.04) !important;
+    }
+    
+    tr {
+        transition: background-color 0.2s ease;
+        
+        &:hover {
+            background-color: rgba($aymo-pale-blue, 0.4) !important;
+        }
+        
+        th {
+            background-color: #FAFCFC !important;
+            color: $aymo-dark-teal !important;
+            font-weight: 600 !important;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            border-bottom: 2px solid $aymo-pale-blue !important;
+        }
+    }
+}
+
+// Control Panel (Search bar area)
+.o_control_panel {
+    background-color: transparent !important;
+    border-bottom: none !important;
+    margin-bottom: 8px;
+    
+    .o_searchview {
+        border-radius: 8px !important;
+        border: 1px solid $aymo-light-teal !important;
+        box-shadow: 0 2px 6px rgba($aymo-dark-teal, 0.08) !important;
+        padding: 4px 10px !important;
+        
+        .o_searchview_input_container .o_searchview_facet {
+            background-color: $aymo-pale-blue !important;
+            border: 1px solid $aymo-light-teal !important;
+            border-radius: 6px !important;
+            
+            .o_facet_values {
+                color: $aymo-dark-teal !important;
+            }
+            .o_facet_remove {
+                color: $aymo-dark-teal !important;
+                &:hover {
+                    color: $aymo-dark-navy !important;
+                }
+            }
+        }
+    }
+}
+
+// 8. Global Kanban Record Styling (Employees, Teachers, Parents)
+.o_kanban_record.o_kanban_record_has_image_fill, 
+.o_kanban_record.o_hr_kanban_record {
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    border: 1px solid rgba(116, 197, 192, 0.2) !important;
+    box-shadow: 0 4px 10px rgba(34, 51, 79, 0.08) !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+    margin-bottom: 12px !important;
+    
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 15px rgba(34, 51, 79, 0.15) !important;
+    }
+
+    .o_kanban_image_fill_left {
+        width: 100px !important;
+        border-right: 1px solid #e0e0e0 !important;
+        margin: 0 !important;
+        background-size: cover;
+        background-position: center;
+        min-height: 120px;
+    }
+
+    .oe_kanban_details {
+        padding: 1rem !important;
+        background-color: white !important;
+        display: flex !important;
+        flex-direction: column !important;
+
+        .o_kanban_record_title {
+            color: $aymo-dark-navy !important;
+            font-size: 1.15rem !important;
+            font-weight: 700 !important;
+            margin-bottom: 0.75rem !important;
+            line-height: 1.2 !important;
+        }
+
+        ul {
+            list-style: none !important;
+            padding-left: 0 !important;
+            margin-bottom: 0 !important;
+            margin-top: auto !important;
+
+            li {
+                color: #4f5b66 !important;
+                font-size: 0.9em !important;
+                margin-bottom: 6px !important;
+                display: flex !important;
+                align-items: center !important;
+
+                &::before {
+                    content: ""; 
+                    display: inline-block;
+                    width: 6px;
+                    height: 6px;
+                    background-color: $aymo-light-teal;
+                    border-radius: 50%;
+                    margin-right: 8px;
+                    flex-shrink: 0;
+                }
+            }
+        }
+    }
+}
+
+// -----------------------------------------------------
+// 9. Aymo Theme Logo Overrides (Robust CSS Logic)
+// -----------------------------------------------------
+
+// Hide defaults
+.o_main_navbar .o_company_logo img,
+.o_main_navbar .o_menu_brand {
+    display: none !important;
+}
+
+// 1. App-level Clickable Dashboard Logo (Left side)
+.o_main_navbar .o_navbar_apps_menu button,
+.o_main_navbar .o_menu_toggle {
+    display: flex !important;
+    align-items: center;
+    width: auto !important; 
+    
+    &::before {
+        content: "";
+        display: inline-block;
+        width: 130px;
+        height: 35px;
+        background-image: url('/theme_school_aymo/static/src/img/logo.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left center;
+        margin-right: 15px; 
+        margin-left: 5px;
+        cursor: pointer;
+    }
+}
+
+// 2. High-Priority Centered Logo exclusively for the Home Dashboard!
+// When the dashboard is active, there are no .o_menu_sections in the DOM.
+body:not(:has(.o_menu_sections)) .o_main_navbar {
+    position: relative;
+    display: flex;
+    justify-content: center; // Horizontally center inner content
+    
+    &::after { 
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); 
+        width: 330px;  // A LONG one!
+        height: 42px;  
+        background-color: #F8FBFB; // Light background
+        background-image: url('/theme_school_aymo/static/src/img/logo.png');
+        background-size: 65% auto; // Shrink slightly to create padding inside the background
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 12px;
+        border: 1px solid rgba(116, 197, 192, 0.2); 
+        box-shadow: 0 4px 10px rgba(34, 51, 79, 0.08); 
+        z-index: 1050; 
+    }
+}

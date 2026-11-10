@@ -1,0 +1,1175 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* school_attendance
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-06 04:02+0000\n"
+"PO-Revision-Date: 2026-03-06 04:02+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet_line__ten
+msgid "10"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet_line__eleven
+msgid "11"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet_line__twelve
+msgid "12"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet_line__thirteen
+msgid "13"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet_line__fourteen
+msgid "14"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet_line__fifteen
+msgid "15"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet_line__sixteen
+msgid "16"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet_line__seventeen
+msgid "17"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet_line__eighteen
+msgid "18"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet_line__nineteen
+msgid "19"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet_line__twenty
+msgid "20"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet_line__twentyone
+msgid "21"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet_line__twentytwo
+msgid "22"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet_line__twentythree
+msgid "23"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet_line__twentyfour
+msgid "24"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet_line__twentyfive
+msgid "25"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet_line__twentysix
+msgid "26"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet_line__twentyseven
+msgid "27"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet_line__twentyeight
+msgid "28"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet_line__twentynine
+msgid "29"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet_line__thirty
+msgid "30"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet_line__thirtyone
+msgid "31"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.monthly_attendance_report_tmpl
+msgid "<b>A</b>"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.monthly_attendance_report_tmpl
+msgid "<b>Batch: </b>"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.monthly_attendance_report_tmpl
+msgid "<b>Month: </b>"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.monthly_attendance_report_tmpl
+msgid "<b>Name of the Teacher: </b>"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.monthly_attendance_report_tmpl
+msgid "<b>Name</b>"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.monthly_attendance_report_tmpl
+msgid "<b>P</b>"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.monthly_attendance_report_tmpl
+msgid "<b>Sn.</b>"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.monthly_attendance_report_tmpl
+msgid "<b>Subject: </b>"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.monthly_attendance_report_tmpl
+msgid ""
+"<br/><br/>\n"
+"                            <br/><br/>\n"
+"                            <br/><br/>\n"
+"                            Signature Date"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_daily_attendance_form_1
+msgid "<span class=\"o_following\">Generate</span>"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_daily_attendance_form_1
+msgid "<span class=\"o_following\">Present</span>"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.student_leave_req_form
+msgid "<span class=\"oe_grey\">-</span>"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_daily_attendance_line__is_absent
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_daily_attendance_form_1
+msgid "Absent"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_daily_attendance__total_absent
+#: model:ir.model.fields,help:school_attendance.field_daily_attendance__total_absent
+msgid "Absent Students"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet__standard_id
+#: model:ir.model.fields,field_description:school_attendance.field_daily_attendance__standard_id
+#: model:ir.model.fields,field_description:school_attendance.field_monthly_attendance_sheet__standard_id
+msgid "Academic Class"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_monthly_attendance_wizard__academic_year_id
+msgid "Academic Session"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_monthly_attendance_wizard__standard_name
+msgid "Academic Stage"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,help:school_attendance.field_monthly_attendance_wizard__standard_name
+msgid "Academic Stage Name"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,help:school_attendance.field_attendance_sheet__attendance_ids
+msgid "Academic Year"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_monthly_attendance_sheet
+msgid "Academic Year Information"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.student_leave_req_form
+msgid "Approve"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.actions.server,name:school_attendance.action_student_leave_approve
+msgid "Approve Leave"
+msgstr ""
+
+#. module: school_attendance
+#. odoo-python
+#: code:addons/school_attendance/models/school_attendance.py:0
+msgid "Approve leave can not be deleted!"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields.selection,name:school_attendance.selection__studentleave_request__state__approve
+msgid "Approved"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields.selection,name:school_attendance.selection__monthly_attendance_wizard__month__4
+msgid "April"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__attachments
+msgid "Attachment"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet__attendance_ids
+#: model:ir.ui.menu,name:school_attendance.menu_attendance
+msgid "Attendance"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet_line__percentage
+msgid "Attendance (%)"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.actions.act_window,name:school_attendance.action_attendance_sheet_form
+#: model:ir.model,name:school_attendance.model_attendance_sheet
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_attendance_sheet_form
+msgid "Attendance Sheet"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model,name:school_attendance.model_attendance_sheet_line
+msgid "Attendance Sheet Line"
+msgstr ""
+
+#. module: school_attendance
+#. odoo-python
+#: code:addons/school_attendance/models/school_attendance.py:0
+msgid "Attendance should be unique!"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_attendance_sheet_form
+msgid "Attendances"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.attendance_month
+msgid "Attendances By Month"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields.selection,name:school_attendance.selection__monthly_attendance_wizard__month__8
+msgid "August"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_attendance_sheet_search
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_daily_attendance_search
+msgid "By Class"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_monthly_attendance_sheet
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_student_attendance_by_month_form
+msgid "Cancel"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,help:school_attendance.field_daily_attendance_line__is_absent
+msgid "Check if student is absent"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,help:school_attendance.field_daily_attendance_line__is_present
+msgid "Check if student is present"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,help:school_attendance.field_daily_attendance__is_elective_subject
+#: model:ir.model.fields,help:school_attendance.field_monthly_attendance_wizard__is_elective_subject
+msgid "Check this if subject is elective."
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_monthly_attendance_wizard__course_id
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__standard_id
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_attendance_sheet_search
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_daily_attendance_search
+msgid "Class"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__teacher_id
+msgid "Class Teacher"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_daily_attendance_form_1
+msgid "Classroom Indicator"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_daily_attendance_form_1
+msgid "Click to mark as Absent."
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_daily_attendance_form_1
+msgid "Click to mark as Present."
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet__create_uid
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet_line__create_uid
+#: model:ir.model.fields,field_description:school_attendance.field_daily_attendance__create_uid
+#: model:ir.model.fields,field_description:school_attendance.field_daily_attendance_line__create_uid
+#: model:ir.model.fields,field_description:school_attendance.field_monthly_attendance_sheet__create_uid
+#: model:ir.model.fields,field_description:school_attendance.field_monthly_attendance_wizard__create_uid
+#: model:ir.model.fields,field_description:school_attendance.field_student_attendance_by_month__create_uid
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet__create_date
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet_line__create_date
+#: model:ir.model.fields,field_description:school_attendance.field_daily_attendance__create_date
+#: model:ir.model.fields,field_description:school_attendance.field_daily_attendance_line__create_date
+#: model:ir.model.fields,field_description:school_attendance.field_monthly_attendance_sheet__create_date
+#: model:ir.model.fields,field_description:school_attendance.field_monthly_attendance_wizard__create_date
+#: model:ir.model.fields,field_description:school_attendance.field_student_attendance_by_month__create_date
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,help:school_attendance.field_daily_attendance__date
+msgid "Current Date"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model,name:school_attendance.model_daily_attendance
+msgid "Daily Attendance"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.actions.act_window,name:school_attendance.action_daily_attendance_form
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_daily_attendance_form_1
+msgid "Daily Attendance Information"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model,name:school_attendance.model_daily_attendance_line
+msgid "Daily Attendance Line"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_daily_attendance_form_1
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_daily_attendance_search
+msgid "Daily Attendance Sheet"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.ui.menu,name:school_attendance.menu_daily_attendances
+msgid "Daily Attendance Sheets"
+msgstr ""
+
+#. module: school_attendance
+#. odoo-python
+#: code:addons/school_attendance/wizard/monthly_attendance_wizard.py:0
+msgid "Data Not Found"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_daily_attendance__date
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_daily_attendance_form_1
+msgid "Date"
+msgstr ""
+
+#. module: school_attendance
+#. odoo-python
+#: code:addons/school_attendance/models/school_attendance.py:0
+msgid "Date should be less than or equal to current date!"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__days
+#: model_terms:ir.ui.view,arch_db:school_attendance.student_leave_req_form
+msgid "Days"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields.selection,name:school_attendance.selection__monthly_attendance_wizard__month__12
+msgid "December"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet__name
+msgid "Description"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet__display_name
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet_line__display_name
+#: model:ir.model.fields,field_description:school_attendance.field_daily_attendance__display_name
+#: model:ir.model.fields,field_description:school_attendance.field_daily_attendance_line__display_name
+#: model:ir.model.fields,field_description:school_attendance.field_monthly_attendance_sheet__display_name
+#: model:ir.model.fields,field_description:school_attendance.field_monthly_attendance_wizard__display_name
+#: model:ir.model.fields,field_description:school_attendance.field_student_attendance_by_month__display_name
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.actions.act_window,help:school_attendance.action_monthly_attendance_sheet
+msgid "Display the Monthly Attendance Sheet."
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields.selection,name:school_attendance.selection__daily_attendance__state__draft
+#: model:ir.model.fields.selection,name:school_attendance.selection__studentleave_request__state__draft
+msgid "Draft"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_monthly_attendance_wizard__is_elective_subject
+msgid "Elective Subject"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__end_date
+#: model_terms:ir.ui.view,arch_db:school_attendance.student_leave_req_form
+msgid "End Date"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet__user_id
+#: model:ir.model.fields,field_description:school_attendance.field_daily_attendance__user_id
+msgid "Faculty"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields.selection,name:school_attendance.selection__monthly_attendance_wizard__month__2
+msgid "February"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,help:school_attendance.field_studentleave_request__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields.selection,name:school_attendance.selection__attendance_sheet__attendance_type__daily
+#: model:ir.model.fields.selection,name:school_attendance.selection__student_attendance_by_month__attendance_type__daily
+msgid "FullDay"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_monthly_attendance_wizard_form
+msgid "Generate .pdf"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_monthly_attendance_wizard_form
+msgid "Generate .xlsx"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_daily_attendance__is_generate
+msgid "Generate?"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_attendance_sheet_search
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_daily_attendance_search
+msgid "Group By..."
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet__id
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet_line__id
+#: model:ir.model.fields,field_description:school_attendance.field_daily_attendance__id
+#: model:ir.model.fields,field_description:school_attendance.field_daily_attendance_line__id
+#: model:ir.model.fields,field_description:school_attendance.field_monthly_attendance_sheet__id
+#: model:ir.model.fields,field_description:school_attendance.field_monthly_attendance_wizard__id
+#: model:ir.model.fields,field_description:school_attendance.field_student_attendance_by_month__id
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__id
+msgid "ID"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,help:school_attendance.field_studentleave_request__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,help:school_attendance.field_studentleave_request__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,help:school_attendance.field_studentleave_request__message_has_error
+#: model:ir.model.fields,help:school_attendance.field_studentleave_request__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_daily_attendance__is_elective_subject
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_daily_attendance_form_1
+msgid "Is Elective Subject"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields.selection,name:school_attendance.selection__monthly_attendance_wizard__month__1
+msgid "January"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields.selection,name:school_attendance.selection__monthly_attendance_wizard__month__7
+msgid "July"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields.selection,name:school_attendance.selection__monthly_attendance_wizard__month__6
+msgid "June"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet__write_uid
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet_line__write_uid
+#: model:ir.model.fields,field_description:school_attendance.field_daily_attendance__write_uid
+#: model:ir.model.fields,field_description:school_attendance.field_daily_attendance_line__write_uid
+#: model:ir.model.fields,field_description:school_attendance.field_monthly_attendance_sheet__write_uid
+#: model:ir.model.fields,field_description:school_attendance.field_monthly_attendance_wizard__write_uid
+#: model:ir.model.fields,field_description:school_attendance.field_student_attendance_by_month__write_uid
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet__write_date
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet_line__write_date
+#: model:ir.model.fields,field_description:school_attendance.field_daily_attendance__write_date
+#: model:ir.model.fields,field_description:school_attendance.field_daily_attendance_line__write_date
+#: model:ir.model.fields,field_description:school_attendance.field_monthly_attendance_sheet__write_date
+#: model:ir.model.fields,field_description:school_attendance.field_monthly_attendance_wizard__write_date
+#: model:ir.model.fields,field_description:school_attendance.field_student_attendance_by_month__write_date
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.student_leave_req_form
+msgid "Leave Details"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields.selection,name:school_attendance.selection__attendance_sheet__attendance_type__lecture
+#: model:ir.model.fields.selection,name:school_attendance.selection__student_attendance_by_month__attendance_type__lecture
+msgid "Lecture Wise"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_daily_attendance_form_1
+msgid "Logo"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields.selection,name:school_attendance.selection__monthly_attendance_wizard__month__3
+msgid "March"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields.selection,name:school_attendance.selection__monthly_attendance_wizard__month__5
+msgid "May"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet__month_id
+#: model:ir.model.fields,field_description:school_attendance.field_monthly_attendance_sheet__month_id
+#: model:ir.model.fields,field_description:school_attendance.field_monthly_attendance_wizard__month
+#: model:ir.model.fields,field_description:school_attendance.field_monthly_attendance_wizard__month_str
+#: model:ir.model.fields,field_description:school_attendance.field_student_attendance_by_month__month
+msgid "Month"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_attendance_sheet_form
+msgid "Monthly Attendance"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.actions.act_window,name:school_attendance.report_monthly
+#: model:ir.model,name:school_attendance.model_report_school_attendance_monthly_attendance_report_tmpl
+#: model:ir.ui.menu,name:school_attendance.menu_monthly_attendances
+#: model_terms:ir.ui.view,arch_db:school_attendance.monthly_attendance_report_tmpl
+msgid "Monthly Attendance Report"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.actions.act_window,name:school_attendance.action_monthly_attendance_sheet
+#: model:ir.model,name:school_attendance.model_monthly_attendance_wizard
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_attendance_sheet_search
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_monthly_attendance_sheet
+msgid "Monthly Attendance Sheet"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model,name:school_attendance.model_monthly_attendance_sheet
+msgid "Monthly Attendance Sheet Wizard"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.actions.report,name:school_attendance.monthly_attendance_report
+msgid "Monthly Attendance report"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_daily_attendance_line__stud_id
+msgid "Name"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: school_attendance
+#. odoo-python
+#: code:addons/school_attendance/models/school_attendance.py:0
+msgid "No Students are found for selected criteria!"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields.selection,name:school_attendance.selection__monthly_attendance_wizard__month__11
+msgid "November"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,help:school_attendance.field_studentleave_request__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,help:school_attendance.field_studentleave_request__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields.selection,name:school_attendance.selection__monthly_attendance_wizard__month__10
+msgid "October"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_monthly_attendance_sheet
+msgid "Open Attendance Sheet"
+msgstr ""
+
+#. module: school_attendance
+#. odoo-python
+#: code:addons/school_attendance/models/school_attendance.py:0
+msgid "Please enter todays date."
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_daily_attendance_line__is_present
+msgid "Present"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,help:school_attendance.field_daily_attendance__total_presence
+msgid "Present Student"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_daily_attendance__total_presence
+msgid "Present Students"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_daily_attendance_line__present_absentcheck
+msgid "Present/Absent Boolean"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_student_attendance_by_month_form
+msgid "Print"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__rating_ids
+msgid "Ratings"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_daily_attendance_form_1
+msgid "Re-Generate"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.student_leave_req_form
+msgid "Reason"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__reason
+msgid "Reason for Leave"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields.selection,name:school_attendance.selection__studentleave_request__state__reject
+#: model_terms:ir.ui.view,arch_db:school_attendance.student_leave_req_form
+msgid "Reject"
+msgstr ""
+
+#. module: school_attendance
+#. odoo-python
+#: code:addons/school_attendance/models/school_attendance.py:0
+msgid "Reject leave can not be deleted!"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model,name:school_attendance.model_report_school_attendance_attendance_month
+msgid "Report attendance Month"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_daily_attendance_form_1
+msgid "Reset To Draft"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_daily_attendance_line__roll_no
+msgid "Roll No."
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet_line__roll_no
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__roll_no
+#: model:ir.model.fields,help:school_attendance.field_daily_attendance_line__roll_no
+msgid "Roll Number"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,help:school_attendance.field_attendance_sheet_line__roll_no
+msgid "Roll Number of Student"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_daily_attendance_form_1
+msgid "Select"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,help:school_attendance.field_attendance_sheet__month_id
+msgid "Select Academic Month"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,help:school_attendance.field_attendance_sheet__standard_id
+#: model:ir.model.fields,help:school_attendance.field_daily_attendance__standard_id
+msgid "Select Standard"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,help:school_attendance.field_attendance_sheet__user_id
+#: model:ir.model.fields,help:school_attendance.field_daily_attendance__user_id
+msgid "Select Teacher"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.student_leave_req_form
+msgid "Send to Draft"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields.selection,name:school_attendance.selection__monthly_attendance_wizard__month__9
+msgid "September"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet_line__standard_id
+#: model:ir.model.fields,field_description:school_attendance.field_daily_attendance_line__standard_id
+msgid "Standard"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_monthly_attendance_sheet
+msgid "Standard Information"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__start_date
+#: model_terms:ir.ui.view,arch_db:school_attendance.student_leave_req_form
+msgid "Start Date"
+msgstr ""
+
+#. module: school_attendance
+#. odoo-python
+#: code:addons/school_attendance/models/school_attendance.py:0
+msgid "Start date should be less than end date!"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_daily_attendance__state
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_daily_attendance_form_1
+msgid "State"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__state
+msgid "Status"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,help:school_attendance.field_studentleave_request__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__student_id
+msgid "Student"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.actions.act_window,name:school_attendance.action_student_attendance_by_month
+msgid "Student Attendances By Month"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.actions.report,name:school_attendance.attendace_month_report
+msgid "Student Attendances by Month"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.student_leave_req_form
+msgid "Student Information"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model,name:school_attendance.model_studentleave_request
+#: model:ir.ui.menu,name:school_attendance.menu_student_leave_req
+msgid "Student Leave Request"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.actions.act_window,name:school_attendance.action_student_leave_form
+msgid "Student Leave Request Action"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.student_leave_req_form
+msgid "Student Leave Request Form"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model,name:school_attendance.model_student_attendance_by_month
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_student_attendance_by_month_form
+msgid "Student Monthly Attendance Report"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet_line__name
+msgid "Student Name"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_daily_attendance__student_ids
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_daily_attendance_form_1
+msgid "Students"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_daily_attendance__subject_id
+#: model:ir.model.fields,field_description:school_attendance.field_monthly_attendance_wizard__subject_id
+#: model:ir.model.fields,help:school_attendance.field_daily_attendance__subject_id
+#: model:ir.model.fields,help:school_attendance.field_monthly_attendance_wizard__subject_id
+msgid "Subject"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_monthly_attendance_wizard__subject_ids
+msgid "Subject's"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_monthly_attendance_wizard__user_id
+msgid "Teacher"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.student_leave_req_form
+msgid "Teacher Information"
+msgstr ""
+
+#. module: school_attendance
+#. odoo-python
+#: code:addons/school_attendance/wizard/student_attendance_by_month.py:0
+msgid "There is no data of attendance for student in selected month or year!"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields.selection,name:school_attendance.selection__studentleave_request__state__toapprove
+#: model_terms:ir.ui.view,arch_db:school_attendance.student_leave_req_form
+msgid "To Approve"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.actions.server,name:school_attendance.action_student_leave_to_approve
+msgid "To Approve Leave"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_daily_attendance__total_student
+msgid "Total Students"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,help:school_attendance.field_daily_attendance__total_student
+msgid "Total Students in class"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet__attendance_type
+#: model:ir.model.fields,field_description:school_attendance.field_student_attendance_by_month__attendance_type
+msgid "Type"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__name
+msgid "Type of Leave"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,help:school_attendance.field_studentleave_request__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_monthly_attendance_wizard__user
+msgid "User"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields.selection,name:school_attendance.selection__daily_attendance__state__validate
+#: model_terms:ir.ui.view,arch_db:school_attendance.view_daily_attendance_form_1
+msgid "Validate"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_studentleave_request__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,help:school_attendance.field_studentleave_request__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: school_attendance
+#: model:ir.model.fields,field_description:school_attendance.field_attendance_sheet__year_id
+#: model:ir.model.fields,field_description:school_attendance.field_monthly_attendance_sheet__year_id
+#: model:ir.model.fields,field_description:school_attendance.field_student_attendance_by_month__year
+msgid "Year"
+msgstr ""
+
+#. module: school_attendance
+#. odoo-python
+#: code:addons/school_attendance/wizard/student_attendance_by_month.py:0
+msgid "You can not print report for student in unconfirm state!"
+msgstr ""
+
+#. module: school_attendance
+#. odoo-python
+#: code:addons/school_attendance/models/school_attendance.py:0
+msgid "You cannot mark as absent, While attendance is in validate state!"
+msgstr ""
+
+#. module: school_attendance
+#. odoo-python
+#: code:addons/school_attendance/models/school_attendance.py:0
+msgid "You cannot mark as present, While attendance is in validate state!"
+msgstr ""
+
+#. module: school_attendance
+#. odoo-python
+#: code:addons/school_attendance/models/school_attendance.py:0
+msgid "You cannot take leave on same date for the same student!"
+msgstr ""
+
+#. module: school_attendance
+#. odoo-python
+#: code:addons/school_attendance/models/school_attendance.py:0
+msgid "Your leave request start date should be greater than current date!"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.student_leave_req_form
+msgid "days"
+msgstr ""
+
+#. module: school_attendance
+#: model_terms:ir.ui.view,arch_db:school_attendance.monthly_attendance_report_tmpl
+msgid "key P=Present, A=Absent"
+msgstr ""
+
+#. module: school_attendance
+#. odoo-python
+#: code:addons/school_attendance/wizard/monthly_attendance_wizard.py:0
+msgid "not deleted"
+msgstr ""

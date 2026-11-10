@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.zip
+*.tar
+*.gz
+*.rar
+*.7z
+.vscode/
+.idea/
+*.log

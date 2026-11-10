@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+
+    <!-- CLASS TIMETABLE GRID REPORT ACTION -->
+    <record id="action_report_class_timetable_grid" model="ir.actions.report">
+        <field name="name">Class Grid Timetable</field>
+        <field name="model">time.table</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">timetable_creator.report_class_timetable_grid</field>
+        <field name="report_file">timetable_creator.report_class_timetable_grid</field>
+        <field name="print_report_name">'Timetable - %s' % (object.name)</field>
+        <field name="binding_model_id" ref="timetable.model_time_table"/>
+        <field name="binding_view_types">list,form</field>
+    </record>
+
+    <!-- CLASS TIMETABLE GRID QWEB DEFINITION -->
+    <template id="report_class_timetable_grid">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                    <!-- page-break-inside: avoid handles multi-print bulk pages cleanly -->
+                    <div class="page" dir="rtl" style="page-break-after: always;">
+                        <style>
+                            .grid-table { width: 100%; border-collapse: collapse; text-align: center; }
+                            .grid-table th, .grid-table td { border: 2px solid black; padding: 8px; font-size: 14px; }
+                            .grid-table th { background-color: #f2f2f2; font-weight: bold; }
+                        </style>
+                        <h2 class="text-center mb-4">Timetable: <span t-field="o.name"/></h2>
+                        <h4 class="text-center mb-4">
+                            Class: <span t-field="o.standard_id.standard_id.name"/> | 
+                            Year: <span t-field="o.year_id.name"/>
+                        </h4>
+                        
+                        <t t-set="grid_data" t-value="get_timetable_grid(o)"/>
+                        
+                        <table class="grid-table mt-4">
+                            <thead>
+                                <tr>
+                                    <th>Days / Times</th>
+                                    <t t-foreach="grid_data['time_slots']" t-as="slot">
+                                        <th>
+                                            <span t-esc="'{0:02.0f}:{1:02.0f}'.format(int(slot[0]), int((slot[0] % 1) * 60))"/> - 
+                                            <span t-esc="'{0:02.0f}:{1:02.0f}'.format(int(slot[1]), int((slot[1] % 1) * 60))"/>
+                                        </th>
+                                    </t>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-foreach="grid_data['days']" t-as="day">
+                                    <tr>
+                                        <!-- Translatable Days -->
+                                        <th style="white-space: nowrap;">
+                                            <t t-if="day == 'sunday'">الأحد</t>
+                                            <t t-if="day == 'monday'">الإثنين</t>
+                                            <t t-if="day == 'tuesday'">الثلاثاء</t>
+                                            <t t-if="day == 'wednesday'">الأربعاء</t>
+                                            <t t-if="day == 'thursday'">الخميس</t>
+                                            <t t-if="day == 'friday'">الجمعة</t>
+                                            <t t-if="day == 'saturday'">السبت</t>
+                                        </th>
+                                        <t t-foreach="grid_data['time_slots']" t-as="slot">
+                                            <td>
+                                                <t t-out="grid_data['grid'][day].get(slot, '').replace('\n', '&lt;br/&gt;')"/>
+                                            </td>
+                                        </t>
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <!-- TEACHER TIMETABLE GRID REPORT ACTION -->
+    <record id="action_report_teacher_timetable_grid" model="ir.actions.report">
+        <field name="name">Teacher Grid Timetable</field>
+        <field name="model">school.teacher</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">timetable_creator.report_teacher_timetable_grid</field>
+        <field name="report_file">timetable_creator.report_teacher_timetable_grid</field>
+        <field name="print_report_name">'Timetable - %s' % (object.name)</field>
+        <field name="binding_model_id" ref="school.model_school_teacher"/>
+        <field name="binding_view_types">list,form</field>
+    </record>
+
+    <!-- TEACHER TIMETABLE GRID QWEB DEFINITION -->
+    <template id="report_teacher_timetable_grid">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                    <div class="page" dir="rtl" style="page-break-after: always;">
+                        <style>
+                            .grid-table { width: 100%; border-collapse: collapse; text-align: center; }
+                            .grid-table th, .grid-table td { border: 2px solid black; padding: 8px; font-size: 14px; }
+                            .grid-table th { background-color: #f2f2f2; font-weight: bold; }
+                        </style>
+                        <h2 class="text-center mb-4">Teacher Timetable</h2>
+                        <h4 class="text-center mb-4"><span t-field="o.name"/></h4>
+                        
+                        <t t-set="grid_data" t-value="get_timetable_grid(o)"/>
+                        
+                        <table class="grid-table mt-4">
+                            <thead>
+                                <tr>
+                                    <th>Days / Times</th>
+                                    <t t-foreach="grid_data['time_slots']" t-as="slot">
+                                        <th>
+                                            <span t-esc="'{0:02.0f}:{1:02.0f}'.format(int(slot[0]), int((slot[0] % 1) * 60))"/> - 
+                                            <span t-esc="'{0:02.0f}:{1:02.0f}'.format(int(slot[1]), int((slot[1] % 1) * 60))"/>
+                                        </th>
+                                    </t>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-foreach="grid_data['days']" t-as="day">
+                                    <tr>
+                                        <!-- Translatable Days -->
+                                        <th style="white-space: nowrap;">
+                                            <t t-if="day == 'sunday'">الأحد</t>
+                                            <t t-if="day == 'monday'">الإثنين</t>
+                                            <t t-if="day == 'tuesday'">الثلاثاء</t>
+                                            <t t-if="day == 'wednesday'">الأربعاء</t>
+                                            <t t-if="day == 'thursday'">الخميس</t>
+                                            <t t-if="day == 'friday'">الجمعة</t>
+                                            <t t-if="day == 'saturday'">السبت</t>
+                                        </th>
+                                        <t t-foreach="grid_data['time_slots']" t-as="slot">
+                                            <td>
+                                                <t t-out="grid_data['grid'][day].get(slot, '').replace('\n', '&lt;br/&gt;')"/>
+                                            </td>
+                                        </t>
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+</odoo>

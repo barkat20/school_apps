@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_timetable_generation_result_form" model="ir.ui.view">
+        <field name="name">timetable.generation.result.form</field>
+        <field name="model">timetable.generation.result</field>
+        <field name="arch" type="xml">
+            <form string="Timetable Generation Log">
+                <sheet>
+                    <div style="font-size: 14px; font-family: monospace;">
+                        <field name="message"/>
+                    </div>
+                </sheet>
+                <footer>
+                    <button string="Close" class="btn-primary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,34 @@
+# See LICENSE file for full copyright and licensing details.
+
+from . import models
+
+def post_init_hook(env):
+    wilayas = [
+        ("01", "Adrar"), ("02", "Chlef"), ("03", "Laghouat"), ("04", "Oum El Bouaghi"), ("05", "Batna"), 
+        ("06", "Béjaïa"), ("07", "Biskra"), ("08", "Béchar"), ("09", "Blida"), ("10", "Bouira"), 
+        ("11", "Tamanrasset"), ("12", "Tébessa"), ("13", "Tlemcen"), ("14", "Tiaret"), ("15", "Tizi Ouzou"), 
+        ("16", "Alger"), ("17", "Djelfa"), ("18", "Jijel"), ("19", "Sétif"), ("20", "Saïda"), 
+        ("21", "Skikda"), ("22", "Sidi Bel Abbès"), ("23", "Annaba"), ("24", "Guelma"), ("25", "Constantine"), 
+        ("26", "Médéa"), ("27", "Mostaganem"), ("28", "M'Sila"), ("29", "Mascara"), ("30", "Ouargla"), 
+        ("31", "Oran"), ("32", "El Bayadh"), ("33", "Illizi"), ("34", "Bordj Bou Arreridj"), ("35", "Boumerdès"), 
+        ("36", "El Tarf"), ("37", "Tindouf"), ("38", "Tissemsilt"), ("39", "El Oued"), ("40", "Khenchela"), 
+        ("41", "Souk Ahras"), ("42", "Tipaza"), ("43", "Mila"), ("44", "Aïn Defla"), ("45", "Naâma"), 
+        ("46", "Aïn Témouchent"), ("47", "Ghardaïa"), ("48", "Relizane"), ("49", "Timimoun"), 
+        ("50", "Bordj Badji Mokhtar"), ("51", "Ouled Djellal"), ("52", "Béni Abbès"), ("53", "In Salah"), 
+        ("54", "In Guezzam"), ("55", "Touggourt"), ("56", "Djanet"), ("57", "El M'Ghair"), ("58", "El Meniaa"),
+        ("59", "Aflou"), ("60", "Barika"), ("61", "El Kantara"), ("62", "Bir El Ater"), ("63", "El Aricha"),
+        ("64", "Ksar Chellala"), ("65", "Aïn Oussara"), ("66", "Messaad"), ("67", "Ksar El Boukhari"),
+        ("68", "Bou Saâda"), ("69", "El Abiodh Sidi Cheikh")
+    ]
+    
+    dz = env['res.country'].search([('code', '=', 'DZ')], limit=1)
+    if dz:
+        State = env['res.country.state']
+        for code, name in wilayas:
+            existing = State.search([('country_id', '=', dz.id), ('code', '=', code)])
+            if not existing:
+                State.create({
+                    'name': name,
+                    'code': code,
+                    'country_id': dz.id
+                })

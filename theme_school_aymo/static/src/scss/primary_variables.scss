@@ -1,0 +1,24 @@
+// Aymo ERP Exact Colors interpreted from Logo
+$aymo-dark-navy: #22334F;
+$aymo-dark-teal: #4A8491;
+$aymo-light-teal: #74C5C0;
+$aymo-pale-blue: #D4E9E6;
+
+// Override Odoo Bootstrap Primary Variables
+$o-company-color: $aymo-dark-teal !default;
+$o-brand-odoo: $aymo-dark-teal !default;
+$o-brand-primary: $aymo-dark-teal !default;
+
+// Override Standard Grays & Body
+$body-color: $aymo-dark-navy !default;
+$text-muted: lighten($aymo-dark-navy, 30%) !default;
+$link-color: $aymo-dark-teal !default;
+$link-hover-color: $aymo-light-teal !default;
+
+// Change background color of backend to be softer
+$o-webclient-background-color: #F4F8F9 !default;
+
+// Override component border radiuses for a smooth look
+$border-radius: 8px !default;
+$border-radius-sm: 6px !default;
+$border-radius-lg: 12px !default;

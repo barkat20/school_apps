@@ -1,0 +1,70 @@
+id,name,code,country_id:id
+state_dz_01,Adrar,01,base.dz
+state_dz_02,Chlef,02,base.dz
+state_dz_03,Laghouat,03,base.dz
+state_dz_04,Oum El Bouaghi,04,base.dz
+state_dz_05,Batna,05,base.dz
+state_dz_06,Béjaïa,06,base.dz
+state_dz_07,Biskra,07,base.dz
+state_dz_08,Béchar,08,base.dz
+state_dz_09,Blida,09,base.dz
+state_dz_10,Bouira,10,base.dz
+state_dz_11,Tamanrasset,11,base.dz
+state_dz_12,Tébessa,12,base.dz
+state_dz_13,Tlemcen,13,base.dz
+state_dz_14,Tiaret,14,base.dz
+state_dz_15,Tizi Ouzou,15,base.dz
+state_dz_16,Alger,16,base.dz
+state_dz_17,Djelfa,17,base.dz
+state_dz_18,Jijel,18,base.dz
+state_dz_19,Sétif,19,base.dz
+state_dz_20,Saïda,20,base.dz
+state_dz_21,Skikda,21,base.dz
+state_dz_22,Sidi Bel Abbès,22,base.dz
+state_dz_23,Annaba,23,base.dz
+state_dz_24,Guelma,24,base.dz
+state_dz_25,Constantine,25,base.dz
+state_dz_26,Médéa,26,base.dz
+state_dz_27,Mostaganem,27,base.dz
+state_dz_28,M'Sila,28,base.dz
+state_dz_29,Mascara,29,base.dz
+state_dz_30,Ouargla,30,base.dz
+state_dz_31,Oran,31,base.dz
+state_dz_32,El Bayadh,32,base.dz
+state_dz_33,Illizi,33,base.dz
+state_dz_34,Bordj Bou Arreridj,34,base.dz
+state_dz_35,Boumerdès,35,base.dz
+state_dz_36,El Tarf,36,base.dz
+state_dz_37,Tindouf,37,base.dz
+state_dz_38,Tissemsilt,38,base.dz
+state_dz_39,El Oued,39,base.dz
+state_dz_40,Khenchela,40,base.dz
+state_dz_41,Souk Ahras,41,base.dz
+state_dz_42,Tipaza,42,base.dz
+state_dz_43,Mila,43,base.dz
+state_dz_44,Aïn Defla,44,base.dz
+state_dz_45,Naâma,45,base.dz
+state_dz_46,Aïn Témouchent,46,base.dz
+state_dz_47,Ghardaïa,47,base.dz
+state_dz_48,Relizane,48,base.dz
+state_dz_49,Timimoun,49,base.dz
+state_dz_50,Bordj Badji Mokhtar,50,base.dz
+state_dz_51,Ouled Djellal,51,base.dz
+state_dz_52,Béni Abbès,52,base.dz
+state_dz_53,In Salah,53,base.dz
+state_dz_54,In Guezzam,54,base.dz
+state_dz_55,Touggourt,55,base.dz
+state_dz_56,Djanet,56,base.dz
+state_dz_57,El M'Ghair,57,base.dz
+state_dz_58,El Meniaa,58,base.dz
+state_dz_59,Aflou,59,base.dz
+state_dz_60,Barika,60,base.dz
+state_dz_61,El Kantara,61,base.dz
+state_dz_62,Bir El Ater,62,base.dz
+state_dz_63,El Aricha,63,base.dz
+state_dz_64,Ksar Chellala,64,base.dz
+state_dz_65,Aïn Oussara,65,base.dz
+state_dz_66,Messaad,66,base.dz
+state_dz_67,Ksar El Boukhari,67,base.dz
+state_dz_68,Bou Saâda,68,base.dz
+state_dz_69,El Abiodh Sidi Cheikh,69,base.dz

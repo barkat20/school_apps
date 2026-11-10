@@ -1,0 +1,1098 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* school_fees
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-06 04:03+0000\n"
+"PO-Revision-Date: 2026-03-06 04:03+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: school_fees
+#. odoo-python
+#: code:addons/school_fees/models/school_fees.py:0
+msgid ""
+"\n"
+"                        <div>\n"
+"                            <p>Dear ,\n"
+"                            <br/><br/>\n"
+"                            We are getting in touch as school fees due on  remain unpaid for .\n"
+"                            <br/><br/>\n"
+"                            We kindly ask that you arrange to pay the  balance as soon as possible.\n"
+"                            <br/><br/>\n"
+"                            Thank You.\n"
+"                        </div>"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.student_fees_register
+#: model_terms:ir.ui.view,arch_db:school_fees.student_payslip
+msgid "<b>#</b>"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.student_fees_register
+#: model_terms:ir.ui.view,arch_db:school_fees.student_payslip
+msgid "<b>:</b>"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.student_fees_register
+#: model_terms:ir.ui.view,arch_db:school_fees.student_payslip
+msgid "<b>Date</b>"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.student_payslip
+msgid "<b>Fees Receipt Of </b>"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.student_payslip
+msgid "<b>Fees Structure</b>"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.student_fees_register
+#: model_terms:ir.ui.view,arch_db:school_fees.student_payslip
+msgid "<b>Number</b>"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.student_fees_register
+msgid "<b>Student Name</b>"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.student_fees_register
+msgid "<b>Total Fees</b>"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.student_fees_register
+#: model_terms:ir.ui.view,arch_db:school_fees.student_payslip
+msgid "<b>Total</b>"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.student_fees_register
+msgid ""
+"<br/>\n"
+"                                    <br/>\n"
+"                                    <br/>\n"
+"                                    <br/>\n"
+"                                    <b>Principal</b>\n"
+"                                    <br/>\n"
+"                                    <span>Authorized Signature</span>"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.student_payslip
+msgid ""
+"<br/><br/><br/><br/><br/><br/><br/>\n"
+"                            <b>Principal,</b>\n"
+"                            <br/><br/><br/>\n"
+"                            <span style=\"font-family: 'Helvetica';font-size: 16px;\">Authorized Signature</span>\n"
+"                            <br/>"
+msgstr ""
+
+#. module: school_fees
+#: model:mail.template,body_html:school_fees.fees_reminder_email
+msgid ""
+"<div>${object.body_html}</div>\n"
+"        "
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.student_fees_register
+#: model_terms:ir.ui.view,arch_db:school_fees.student_payslip
+msgid "<span>For the month of </span>"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.student_payslip
+msgid "<strong>Amount Paid</strong>"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.student_payslip
+msgid "<strong>Due Amount</strong>"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.student_payslip
+msgid "<strong>Total Fees</strong>"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip__standard_id
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_form
+msgid "Academic Stage"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip_line_line__academic_year_id
+msgid "Academic Year"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_payslip_line_line__to_month
+msgid "Academic end month"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_payslip_line_line__academic_year_id
+msgid "Academic starting Year"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_payslip_line_line__from_month
+msgid "Academic starting month"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_structure_line__account_id
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip_line__account_id
+msgid "Account"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_structure_line__amount
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip_line__amount
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_fees_structure_line_form
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_line_form
+msgid "Amount"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_payslip__paid_amount
+msgid "Amount Paid"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_payslip__due_amount
+msgid "Amount Remaining"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_structure_line__line_ids
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip_line__line_ids
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_fees_structure_line_form
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_line_form
+msgid "Calculations"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_register__standard_id
+msgid "Class"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_structure__code
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_structure_line__code
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip_line__code
+#: model_terms:ir.ui.view,arch_db:school_fees.view_fees_structure_search
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_fees_structure_form
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_line_form
+msgid "Code"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_register__company_id
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_structure_line__company_id
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip__company_id
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip_line__company_id
+msgid "Company"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields.selection,name:school_fees.selection__student_fees_register__state__confirm
+#: model:ir.model.fields.selection,name:school_fees.selection__student_payslip__state__confirm
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_fees_register_form
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_fees_register_search
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_form
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_search
+msgid "Confirm"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_fees_register_search
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_search
+msgid "Confirm Slip"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_register__create_uid
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_structure__create_uid
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_structure_line__create_uid
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip__create_uid
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip_line__create_uid
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip_line_line__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_register__create_date
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_structure__create_date
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_structure_line__create_date
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip__create_date
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip_line__create_date
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip_line_line__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_structure_line__currency_id
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip__currency_id
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip_line__currency_id
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_form
+msgid "Currency"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_payslip_line__currency_symbol
+msgid "Currency Symbol"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_payslip__currency_symbol
+msgid "Currency symbol"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_payslip__date
+msgid "Current Date of payslip"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields.selection,name:school_fees.selection__student_payslip__type__out_invoice
+msgid "Customer Invoice"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields.selection,name:school_fees.selection__student_payslip__type__out_refund
+msgid "Customer Refund"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_register__date
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip__date
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_fees_register_form
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_form
+msgid "Date"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_fees_register__date
+msgid "Date of register"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip__name
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip_line__description
+#: model:ir.model.fields,help:school_fees.field_student_payslip_line__description
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_form
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_line_form
+msgid "Description"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_register__display_name
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_structure__display_name
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_structure_line__display_name
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip__display_name
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip_line__display_name
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip_line_line__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip__division_id
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_form
+msgid "Division"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields.selection,name:school_fees.selection__student_fees_register__state__draft
+#: model:ir.model.fields.selection,name:school_fees.selection__student_payslip__state__draft
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_fees_register_search
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_search
+msgid "Draft"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_fees_register_search
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_search
+msgid "Draft Slip"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip__due_amount
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_form
+msgid "Due Amount"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_structure_line__type
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip_line__type
+msgid "Duration"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_fees_register__name
+msgid "Enter Name"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_fees_structure_line__name
+msgid "Enter fee structure name"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_fees_register__standard_id
+msgid "Enter student standard"
+msgstr ""
+
+#. module: school_fees
+#. odoo-python
+#: code:addons/school_fees/models/school_fees.py:0
+msgid "Error! You cannot define overlapping months!"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_form
+msgid "Fee Structure"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_fees_structure_line__amount
+#: model:ir.model.fields,help:school_fees.field_student_payslip_line__amount
+msgid "Fee amount"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_fees_register__fees_structure
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_fees_register_form
+msgid "Fee structure"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_fees_structure__code
+#: model:ir.model.fields,help:school_fees.field_student_fees_structure_line__code
+msgid "Fee structure code"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_fees_structure__line_ids
+msgid "Fee structure line"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_fees_structure__name
+msgid "Fee structure name"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_fees_structure_line__type
+msgid "Fee structure type"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_fees_register__total_amount
+msgid "Fee total amounts"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.ui.menu,name:school_fees.menu_fees
+#: model:ir.ui.menu,name:school_fees.menu_student_fees_structure_form
+msgid "Fees"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.actions.act_window,name:school_fees.action_student_payslip_line_form
+#: model:ir.ui.menu,name:school_fees.menu_student_payslip_line_form
+msgid "Fees Head"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.actions.act_window,name:school_fees.action_student_payslip_form
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_student_form2
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_student_form2_inherit
+msgid "Fees Receipt"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.ui.menu,name:school_fees.menu_student_payslip
+msgid "Fees Receipts"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.actions.act_window,name:school_fees.action_stu_fees_form
+#: model:ir.actions.act_window,name:school_fees.action_student_fees_register_form
+#: model:ir.actions.report,name:school_fees.report_student_fees_register_qweb
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_fees_register_search
+msgid "Fees Register"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_fees_register_form
+msgid "Fees Register for"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.ui.menu,name:school_fees.menu_student_fees_register
+msgid "Fees Registers"
+msgstr ""
+
+#. module: school_fees
+#. odoo-python
+#: code:addons/school_fees/models/school_fees.py:0
+#: model:mail.template,name:school_fees.fees_reminder_email
+msgid "Fees Reminder"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.actions.act_window,name:school_fees.action_student_fees_structure_form
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_register__fees_structure
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_structure__line_ids
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip__fees_structure_id
+#: model:ir.ui.menu,name:school_fees.menu_student_fees_structure_sub_form
+#: model_terms:ir.ui.view,arch_db:school_fees.view_fees_structure_search
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_fees_register_form
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_fees_structure_form
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_form
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_line_search
+msgid "Fees Structure"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip_line_line__from_month
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_fees_structure_line_form
+msgid "From Month"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_fees_structure_line_form
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_line_form
+msgid "Function"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model,name:school_fees.model_student_payslip_line_line
+msgid "Function Line"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.view_fees_structure_search
+msgid "Group By"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_fees_register_search
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_search
+msgid "Group By..."
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_register__id
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_structure__id
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_structure_line__id
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip__id
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip_line__id
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip_line_line__id
+msgid "ID"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_fees_register_form
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_form
+msgid "Information"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_form
+msgid "Invoice"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip__is_high_school
+msgid "Is High School"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_register__journal_id
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip__journal_id
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_fees_register_form
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_form
+msgid "Journal"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model,name:school_fees.model_account_move
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip__move_id
+msgid "Journal Entry"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_payslip__payment_date
+msgid "Keep empty to use the current date"
+msgstr ""
+
+#. module: school_fees
+#. odoo-python
+#: code:addons/school_fees/models/school_fees.py:0
+msgid "Kindly, Select Account Journal!"
+msgstr ""
+
+#. module: school_fees
+#. odoo-python
+#: code:addons/school_fees/models/school_fees.py:0
+msgid "Kindly, Select Fees Structure!"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_register__write_uid
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_structure__write_uid
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_structure_line__write_uid
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip__write_uid
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip_line__write_uid
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip_line_line__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_register__write_date
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_structure__write_date
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_structure_line__write_date
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip__write_date
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip_line__write_date
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip_line_line__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_payslip__move_id
+msgid "Link to the automatically generated Journal Items."
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_student_form2
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_student_form2_inherit
+msgid "Logo"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields.selection,name:school_fees.selection__student_fees_structure_line__type__month
+#: model:ir.model.fields.selection,name:school_fees.selection__student_payslip_line__type__month
+msgid "Monthly"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_register__name
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_structure__name
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_structure_line__name
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip_line__name
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_fees_register_form
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_fees_structure_form
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_form
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_line_form
+msgid "Name"
+msgstr ""
+
+#. module: school_fees
+#. odoo-python
+#: code:addons/school_fees/models/school_fees.py:0
+msgid "New"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_register__number
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip__number
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_fees_register_form
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_form
+msgid "Number"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_form
+msgid "Other Information"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields.selection,name:school_fees.selection__student_payslip__state__paid
+msgid "Paid"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip__paid_amount
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_form
+msgid "Paid Amount"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model,name:school_fees.model_account_payment_register
+msgid "Pay"
+msgstr ""
+
+#. module: school_fees
+#. odoo-python
+#: code:addons/school_fees/models/school_fees.py:0
+msgid "Pay Fees"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip_line__slip_id
+msgid "Pay Slip"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip__line_ids
+msgid "PaySlip Line"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_register__line_ids
+msgid "PaySlips"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_form
+msgid "Payment"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip__payment_date
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_form
+msgid "Payment Date"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_payslip_line__name
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_search
+msgid "Payslip"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_payslip_line__code
+msgid "Payslip code"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_payslip_line__line_ids
+msgid "Payslip line"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_payslip__name
+msgid "Payslip name"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_payslip__number
+msgid "Payslip number"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_payslip__type
+msgid "Payslip type"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_payslip__line_ids
+msgid "Payslips"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields.selection,name:school_fees.selection__student_payslip__state__pending
+msgid "Pending"
+msgstr ""
+
+#. module: school_fees
+#. odoo-python
+#: code:addons/school_fees/models/school_fees.py:0
+msgid "Please define sequence on the journal related to this invoice."
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_structure_line__product_id
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip_line__product_id
+msgid "Product"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields.selection,name:school_fees.selection__student_fees_structure_line__type__range
+#: model:ir.model.fields.selection,name:school_fees.selection__student_payslip_line__type__range
+msgid "Range"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip__register_id
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_search
+msgid "Register"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_payslip_line__account_id
+msgid "Related account"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_fees_structure_line__company_id
+#: model:ir.model.fields,help:school_fees.field_student_payslip__company_id
+#: model:ir.model.fields,help:school_fees.field_student_payslip_line__company_id
+msgid "Related company"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_fees_register_form
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_form
+msgid "School"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model,name:school_fees.model_report_school_fees_student_payslip
+msgid "School Fees Payslip Report"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model,name:school_fees.model_report_school_fees_student_fees_register
+msgid "School Fees Register Report"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_fees_register_form
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_form
+msgid "School Name"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_fees_register_form
+msgid "Select Class"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_fees_register__journal_id
+msgid "Select Journal"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_fees_structure_line__currency_id
+#: model:ir.model.fields,help:school_fees.field_student_payslip_line__currency_id
+msgid "Select currency"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_fees_structure_line__currency_symbol
+msgid "Select currency symbol"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_payslip__fees_structure_id
+msgid "Select fee structure"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_payslip__journal_id
+msgid "Select journal for account"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_payslip_line__type
+msgid "Select payslip type"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_fees_register__company_id
+msgid "Select related company"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_payslip__standard_id
+msgid "Select school standard"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_payslip__division_id
+msgid "Select standard division"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_payslip__medium_id
+msgid "Select standard medium"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_payslip__student_id
+msgid "Select student"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_payslip__register_id
+msgid "Select student fee register"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_account_bank_statement_line__student_payslip_id
+#: model:ir.model.fields,help:school_fees.field_account_move__student_payslip_id
+#: model:ir.model.fields,help:school_fees.field_student_payslip_line__slip_id
+msgid "Select student payslip"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_payslip__currency_id
+msgid "Selelct currency"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_structure_line__sequence
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip_line_line__sequence
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_fees_structure_line_form
+msgid "Sequence"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_fees_register__number
+msgid "Sequence number of fee registration form"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_fees_structure_line__sequence
+msgid "Sequence of fee structure form"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_payslip_line_line__sequence
+msgid "Sequence of payslip"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip_line_line__slipline1_id
+msgid "Slip Line"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip_line_line__slipline_id
+msgid "Slip Line Ref"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_form
+msgid "Standard Information"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_register__state
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip__state
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_fees_register_form
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_form
+msgid "State"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_fees_register__state
+msgid "State of student fee registration form"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_payslip__state
+msgid "State of the student payslip"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_fees_register_search
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_search
+msgid "States"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.view_fees_structure_search
+msgid "Structure Name"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip__student_id
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_search
+msgid "Student"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.student_payslip
+msgid "Student Fees Receipt"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_fees_register_form
+msgid "Student Fees Register"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model,name:school_fees.model_student_fees_structure
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_fees_structure_form
+msgid "Student Fees Structure"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model,name:school_fees.model_student_fees_structure_line
+msgid "Student Fees Structure Line"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model,name:school_fees.model_student_student
+msgid "Student Information"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_fees_register_form
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_form
+msgid "Student Name"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model,name:school_fees.model_student_payslip
+msgid "Student PaySlip"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model,name:school_fees.model_student_payslip_line
+msgid "Student PaySlip Line"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.actions.report,name:school_fees.report_student_payslip_qweb
+#: model:ir.model.fields,field_description:school_fees.field_account_bank_statement_line__student_payslip_id
+#: model:ir.model.fields,field_description:school_fees.field_account_move__student_payslip_id
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_fees_register_form
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_form
+msgid "Student Payslip"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_fees_structure_line_form
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_line_form
+msgid "Student Payslip Line"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model,name:school_fees.model_student_fees_register
+msgid "Student fees Register"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_fees_structure_line__line_ids
+#: model:ir.model.fields,help:school_fees.field_student_payslip_line_line__slipline1_id
+#: model:ir.model.fields,help:school_fees.field_student_payslip_line_line__slipline_id
+msgid "Student payslip line"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_fees_register__line_ids
+msgid "Student payslips"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip__medium_id
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_form
+msgid "Student studying year"
+msgstr ""
+
+#. module: school_fees
+#: model_terms:ir.ui.view,arch_db:school_fees.student_fees_register
+msgid "Students Payroll Register"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields.selection,name:school_fees.selection__student_payslip__type__in_invoice
+msgid "Supplier Invoice"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields.selection,name:school_fees.selection__student_payslip__type__in_refund
+msgid "Supplier Refund"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_structure_line__currency_symbol
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip__currency_symbol
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip_line__currency_symbol
+msgid "Symbol"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model,name:school_fees.model_terminate_reason
+msgid "Terminate Reason"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.constraint,message:school_fees.constraint_student_fees_structure_code_uniq
+#: model:ir.model.constraint,message:school_fees.constraint_student_payslip_code_uniq
+msgid "The code of the Fees Structure must be unique !"
+msgstr ""
+
+#. module: school_fees
+#. odoo-python
+#: code:addons/school_fees/models/school_fees.py:0
+msgid "There exists a Fees record for: %s for same date.!"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip_line_line__to_month
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_fees_structure_line_form
+msgid "To Month"
+msgstr ""
+
+#. module: school_fees
+#. odoo-python
+#: code:addons/school_fees/models/school_fees.py:0
+msgid "To Month should be greater than From Month!"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_fees_register__total_amount
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip__total
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_form
+msgid "Total"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,help:school_fees.field_student_payslip__total
+msgid "Total Amount"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields,field_description:school_fees.field_student_payslip__type
+#: model_terms:ir.ui.view,arch_db:school_fees.view_student_payslip_form
+msgid "Type"
+msgstr ""
+
+#. module: school_fees
+#: model:ir.model.fields.selection,name:school_fees.selection__student_fees_structure_line__type__year
+#: model:ir.model.fields.selection,name:school_fees.selection__student_payslip_line__type__year
+msgid "Yearly"
+msgstr ""
+
+#. module: school_fees
+#. odoo-python
+#: code:addons/school_fees/models/school_fees.py:0
+msgid "You can delete record in unconfirm state only!"
+msgstr ""
+
+#. module: school_fees
+#. odoo-python
+#: code:addons/school_fees/wizard/terminate_reason.py:0
+msgid ""
+"You can't terminate student becausepayment of fees of student is remaining!"
+msgstr ""
+
+#. module: school_fees
+#. odoo-python
+#: code:addons/school_fees/models/school_fees.py:0
+msgid ""
+"You cannot alumni student because payment of fees of student is remaining!"
+msgstr ""

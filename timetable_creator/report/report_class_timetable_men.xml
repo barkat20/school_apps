@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_report_class_timetable_men" model="ir.actions.report">
+        <field name="name">MEN Class Timetable</field>
+        <field name="model">time.table</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">timetable_creator.report_class_timetable_men_view</field>
+        <field name="report_file">timetable_creator.report_class_timetable_men_view</field>
+        <field name="print_report_name">'MEN_Timetable_%s' % (object.name)</field>
+        <field name="binding_model_id" ref="timetable.model_time_table"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <template id="report_class_timetable_men_view">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.external_layout">
+                    <div class="page" style="direction: rtl;">
+                        <h2 class="text-center mb-4">الجمهورية الجزائرية الديمقراطية الشعبية</h2>
+                        <h3 class="text-center mb-4">وزارة التربية الوطنية</h3>
+                        
+                        <div class="row mb-4">
+                            <div class="col-6">
+                                <strong>المؤسسة: </strong> <span t-esc="doc.env.company.name"/>
+                            </div>
+                            <div class="col-6" style="text-align: left;">
+                                <strong>القسم: </strong> <span t-esc="doc.standard_id.name"/>
+                            </div>
+                        </div>
+                        
+                        <!-- Minimal timetable layout -->
+                        <table class="table table-bordered text-center" style="width:100%; border: 2px solid black;">
+                            <thead>
+                                <tr style="background-color: #f2f2f2;">
+                                    <th style="border: 2px solid black; text-align: center;">اليوم / التوقيت</th>
+                                    <th style="border: 2px solid black; text-align: center;">08:00 - 09:00</th>
+                                    <th style="border: 2px solid black; text-align: center;">09:00 - 10:00</th>
+                                    <th style="border: 2px solid black; text-align: center;">10:00 - 11:00</th>
+                                    <th style="border: 2px solid black; text-align: center;">11:00 - 12:00</th>
+                                    <th style="background-color: #ddd; border: 2px solid black; text-align: center;">استراحة</th>
+                                    <th style="border: 2px solid black; text-align: center;">13:00 - 14:00</th>
+                                    <th style="border: 2px solid black; text-align: center;">14:00 - 15:00</th>
+                                    <th style="border: 2px solid black; text-align: center;">15:00 - 16:00</th>
+                                    <th style="border: 2px solid black; text-align: center;">16:00 - 17:00</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-foreach="['sunday', 'monday', 'tuesday', 'wednesday', 'thursday']" t-as="day">
+                                    <tr>
+                                        <td style="border: 2px solid black; font-weight: bold; background-color: #f2f2f2; vertical-align: middle;">
+                                            <t t-if="day == 'sunday'">الأحد</t>
+                                            <t t-if="day == 'monday'">الإثنين</t>
+                                            <t t-if="day == 'tuesday'">الثلاثاء</t>
+                                            <t t-if="day == 'wednesday'">الأربعاء</t>
+                                            <t t-if="day == 'thursday'">الخميس</t>
+                                        </td>
+                                        
+                                        <t t-foreach="[8.0, 9.0, 10.0, 11.0]" t-as="time_slot">
+                                            <t t-set="lines" t-value="doc.timetable_ids.filtered(lambda l: l.week_day == day and l.start_time &lt;= time_slot and l.end_time &gt; time_slot)"/>
+                                            <td style="border: 1px solid black; vertical-align: middle;">
+                                                <t t-if="lines">
+                                                    <div t-foreach="lines" t-as="l">
+                                                        <strong t-esc="l.subject_id.name"/><br/>
+                                                        <small t-esc="l.teacher_id.name"/><br/>
+                                                        <small t-if="l.class_room_id" t-esc="l.class_room_id.name"/>
+                                                    </div>
+                                                </t>
+                                            </td>
+                                        </t>
+                                        
+                                        <td style="background-color: #ddd; border: 2px solid black;"/>
+                                        
+                                        <t t-foreach="[13.0, 14.0, 15.0, 16.0]" t-as="time_slot">
+                                            <t t-set="lines" t-value="doc.timetable_ids.filtered(lambda l: l.week_day == day and l.start_time &lt;= time_slot and l.end_time &gt; time_slot)"/>
+                                            <td style="border: 1px solid black; vertical-align: middle;">
+                                                <t t-if="lines">
+                                                    <div t-foreach="lines" t-as="l">
+                                                        <strong t-esc="l.subject_id.name"/><br/>
+                                                        <small t-esc="l.teacher_id.name"/><br/>
+                                                        <small t-if="l.class_room_id" t-esc="l.class_room_id.name"/>
+                                                    </div>
+                                                </t>
+                                            </td>
+                                        </t>
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_timetable_force_assign_wizard_form" model="ir.ui.view">
+        <field name="name">timetable.force.assign.wizard.form</field>
+        <field name="model">timetable.force.assign.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Resolve Missing Slot">
+                <sheet>
+                    <div class="oe_title" style="margin-bottom: 20px;">
+                        <h1>
+                            Assign Slot: 
+                            <field name="day" readonly="1" nolabel="1" class="oe_inline"/> 
+                            <field name="start_time" widget="float_time" readonly="1" nolabel="1" class="oe_inline"/> - 
+                            <field name="end_time" widget="float_time" readonly="1" nolabel="1" class="oe_inline"/>
+                        </h1>
+                    </div>
+                    
+                    <group>
+                        <field name="table_id" invisible="1"/>
+                        <field name="reason" placeholder="e.g. Director decision, Exam prep"/>
+                        <field name="pin_level"/>
+                    </group>
+
+                    <separator string="Smart Recommendations" invisible="is_advanced_override == True"/>
+                    <field name="missing_subject_ids" invisible="is_advanced_override == True">
+                        <list create="0" edit="0" delete="0">
+                            <field name="subject_id"/>
+                            <field name="standard_id"/>
+                            <field name="teacher_id"/>
+                            <field name="missing_hours" string="Missing Hrs"/>
+                            <field name="teacher_availability" widget="badge" decoration-danger="status_color == 'red'" decoration-success="status_color == 'green'"/>
+                            <field name="status_color" invisible="1"/>
+                            <button name="action_assign_this_subject" type="object" string="Assign" class="btn-primary btn-sm"/>
+                        </list>
+                        <form string="Missing Subject Analysis">
+                            <sheet>
+                                <div class="alert alert-warning" role="alert" invisible="not reason">
+                                    <strong>Scheduling Failed:</strong> <field name="reason" readonly="1"/>
+                                </div>
+                                <group>
+                                    <group>
+                                        <field name="subject_id" readonly="1"/>
+                                        <field name="standard_id" readonly="1"/>
+                                        <field name="missing_hours" readonly="1"/>
+                                    </group>
+                                    <group>
+                                        <field name="teacher_id" readonly="1"/>
+                                        <field name="suggested_room_id" readonly="1"/>
+                                        <field name="teacher_availability" readonly="1" widget="badge" decoration-danger="status_color == 'red'" decoration-success="status_color == 'green'"/>
+                                        <field name="status_color" invisible="1"/>
+                                    </group>
+                                </group>
+                            </sheet>
+                            <footer>
+                                <button name="action_assign_this_subject" type="object" string="Assign Anyway" class="btn-primary" invisible="status_color == 'red'"/>
+                                <button name="action_assign_this_subject" type="object" string="Force Assign (Overrides Constraints)" class="btn-danger" invisible="status_color == 'green'"/>
+                                <button special="cancel" string="Close" class="btn-secondary"/>
+                            </footer>
+                        </form>
+                    </field>
+
+                    <group>
+                        <field name="is_advanced_override"/>
+                    </group>
+                    <group invisible="is_advanced_override == False">
+                        <group>
+                            <field name="subject_id" options="{'no_create': True}" required="is_advanced_override == True"/>
+                            <field name="teacher_id" options="{'no_create': True}" required="is_advanced_override == True"/>
+                        </group>
+                    </group>
+                    <div invisible="is_advanced_override == False">
+                        <field name="conflict_preview_html" widget="html" nolabel="1" readonly="1" options="{'codeview': false}"/>
+                    </div>
+                </sheet>
+                <footer invisible="is_advanced_override == False">
+                    <button string="Force Assign Anyway" name="action_force_pin" type="object" class="btn-primary" data-hotkey="q"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel" data-hotkey="z"/>
+                </footer>
+                <footer invisible="is_advanced_override == True">
+                    <button string="Close" class="btn-secondary" special="cancel" data-hotkey="z"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_open_force_assign_wizard" model="ir.actions.act_window">
+        <field name="name">Resolve Missing Slot</field>
+        <field name="res_model">timetable.force.assign.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

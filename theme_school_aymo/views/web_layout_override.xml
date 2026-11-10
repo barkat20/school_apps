@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Override the login brand logo -->
+    <template id="aymo_login_logo" inherit_id="web.login_layout">
+        <xpath expr="//img[hasclass('img-fluid')]" position="attributes">
+            <attribute name="src">/theme_school_aymo/static/src/img/logo.png</attribute>
+            <attribute name="style">max-height: 120px;</attribute>
+        </xpath>
+    </template>
+</odoo>

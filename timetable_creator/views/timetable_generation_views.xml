@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Removed invalid delete tags -->
+    <record id="action_timetable_regular_creator" model="ir.actions.act_window">
+        <field name="name">Generated Timetables</field>
+        <field name="res_model">time.table</field>
+        <field name="view_mode">list,form</field>
+        <field name="context">{'search_default_group_by_academic_stage': 1, 'search_default_group_by_year': 1, 'search_default_group_by_version': 1}</field>
+    </record>
+
+    <!-- Base Configuration Menu -->
+    <menuitem id="menu_timetable_generation_config" 
+              name="Timetable Rules" 
+              parent="timetable.menu_timetable_1" 
+              sequence="20"/>
+
+    <menuitem id="menu_timetable_generated_list" 
+              name="Generated Timetables" 
+              parent="timetable.menu_timetable_1" 
+              action="action_timetable_regular_creator"
+              sequence="10"/>
+
+    <!-- ================== Groups ================== -->
+    <record id="view_school_class_group_form" model="ir.ui.view">
+        <field name="name">school.class.group.form</field>
+        <field name="model">school.class.group</field>
+        <field name="arch" type="xml">
+            <form string="Class Group">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="standard_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_school_class_group_list" model="ir.ui.view">
+        <field name="name">school.class.group.list</field>
+        <field name="model">school.class.group</field>
+        <field name="arch" type="xml">
+            <list string="Class Groups" editable="bottom">
+                <field name="standard_id"/>
+                <field name="name"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_school_class_group" model="ir.actions.act_window">
+        <field name="name">Class Groups</field>
+        <field name="res_model">school.class.group</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_school_class_group" name="Class Groups" parent="menu_timetable_generation_config" action="action_school_class_group" sequence="1"/>
+
+    <!-- ================== Teacher Assignments ================== -->
+    <record id="view_timetable_teacher_assignment_form" model="ir.ui.view">
+        <field name="name">timetable.teacher.assignment.form</field>
+        <field name="model">timetable.teacher.assignment</field>
+        <field name="arch" type="xml">
+            <form string="Teacher Assignment">
+                <sheet>
+                    <group>
+                        <field name="teacher_id"/>
+                    </group>
+                    <notebook>
+                        <page string="Assigned Classes &amp; Hours" name="assignment_lines">
+                            <field name="assignment_line_ids">
+                                <list editable="bottom">
+                                    <field name="standard_id"/>
+                                    <field name="subject_id"/>
+                                    <field name="group_ids" widget="many2many_tags" domain="[('standard_id', '=', standard_id)]"/>
+                                    <field name="hours_per_week"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_timetable_teacher_assignment_list" model="ir.ui.view">
+        <field name="name">timetable.teacher.assignment.list</field>
+        <field name="model">timetable.teacher.assignment</field>
+        <field name="arch" type="xml">
+            <list string="Teacher Assignments">
+                <field name="teacher_id"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_timetable_teacher_assignment" model="ir.actions.act_window">
+        <field name="name">Teacher Assignments</field>
+        <field name="res_model">timetable.teacher.assignment</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_timetable_teacher_assignment" name="Teacher Assignments" parent="menu_timetable_generation_config" action="action_timetable_teacher_assignment" sequence="2"/>
+
+    <!-- ================== Class Condition ================== -->
+    <record id="view_timetable_class_condition_form" model="ir.ui.view">
+        <field name="name">timetable.class.condition.form</field>
+        <field name="model">timetable.class.condition</field>
+        <field name="arch" type="xml">
+            <form string="Class Condition">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                    <group string="Study Days">
+                        <group>
+                            <field name="day_sunday"/>
+                            <field name="day_monday"/>
+                            <field name="day_tuesday"/>
+                            <field name="day_wednesday"/>
+                        </group>
+                        <group>
+                            <field name="day_thursday"/>
+                            <field name="day_friday"/>
+                            <field name="day_saturday"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Daily Time Limits" name="daily_time_limits">
+                            <group string="Sunday" invisible="not day_sunday">
+                                <group>
+                                    <field name="sunday_study_morning"/>
+                                    <field name="sunday_start_morning" widget="float_time" invisible="not sunday_study_morning"/>
+                                    <field name="sunday_end_morning" widget="float_time" invisible="not sunday_study_morning"/>
+                                </group>
+                                <group>
+                                    <field name="sunday_study_evening"/>
+                                    <field name="sunday_start_evening" widget="float_time" invisible="not sunday_study_evening"/>
+                                    <field name="sunday_end_evening" widget="float_time" invisible="not sunday_study_evening"/>
+                                </group>
+                            </group>
+                            <group string="Monday" invisible="not day_monday">
+                                <group>
+                                    <field name="monday_study_morning"/>
+                                    <field name="monday_start_morning" widget="float_time" invisible="not monday_study_morning"/>
+                                    <field name="monday_end_morning" widget="float_time" invisible="not monday_study_morning"/>
+                                </group>
+                                <group>
+                                    <field name="monday_study_evening"/>
+                                    <field name="monday_start_evening" widget="float_time" invisible="not monday_study_evening"/>
+                                    <field name="monday_end_evening" widget="float_time" invisible="not monday_study_evening"/>
+                                </group>
+                            </group>
+                            <group string="Tuesday" invisible="not day_tuesday">
+                                <group>
+                                    <field name="tuesday_study_morning"/>
+                                    <field name="tuesday_start_morning" widget="float_time" invisible="not tuesday_study_morning"/>
+                                    <field name="tuesday_end_morning" widget="float_time" invisible="not tuesday_study_morning"/>
+                                </group>
+                                <group>
+                                    <field name="tuesday_study_evening"/>
+                                    <field name="tuesday_start_evening" widget="float_time" invisible="not tuesday_study_evening"/>
+                                    <field name="tuesday_end_evening" widget="float_time" invisible="not tuesday_study_evening"/>
+                                </group>
+                            </group>
+                            <group string="Wednesday" invisible="not day_wednesday">
+                                <group>
+                                    <field name="wednesday_study_morning"/>
+                                    <field name="wednesday_start_morning" widget="float_time" invisible="not wednesday_study_morning"/>
+                                    <field name="wednesday_end_morning" widget="float_time" invisible="not wednesday_study_morning"/>
+                                </group>
+                                <group>
+                                    <field name="wednesday_study_evening"/>
+                                    <field name="wednesday_start_evening" widget="float_time" invisible="not wednesday_study_evening"/>
+                                    <field name="wednesday_end_evening" widget="float_time" invisible="not wednesday_study_evening"/>
+                                </group>
+                            </group>
+                            <group string="Thursday" invisible="not day_thursday">
+                                <group>
+                                    <field name="thursday_study_morning"/>
+                                    <field name="thursday_start_morning" widget="float_time" invisible="not thursday_study_morning"/>
+                                    <field name="thursday_end_morning" widget="float_time" invisible="not thursday_study_morning"/>
+                                </group>
+                                <group>
+                                    <field name="thursday_study_evening"/>
+                                    <field name="thursday_start_evening" widget="float_time" invisible="not thursday_study_evening"/>
+                                    <field name="thursday_end_evening" widget="float_time" invisible="not thursday_study_evening"/>
+                                </group>
+                            </group>
+                            <group string="Friday" invisible="not day_friday">
+                                <group>
+                                    <field name="friday_study_morning"/>
+                                    <field name="friday_start_morning" widget="float_time" invisible="not friday_study_morning"/>
+                                    <field name="friday_end_morning" widget="float_time" invisible="not friday_study_morning"/>
+                                </group>
+                                <group>
+                                    <field name="friday_study_evening"/>
+                                    <field name="friday_start_evening" widget="float_time" invisible="not friday_study_evening"/>
+                                    <field name="friday_end_evening" widget="float_time" invisible="not friday_study_evening"/>
+                                </group>
+                            </group>
+                            <group string="Saturday" invisible="not day_saturday">
+                                <group>
+                                    <field name="saturday_study_morning"/>
+                                    <field name="saturday_start_morning" widget="float_time" invisible="not saturday_study_morning"/>
+                                    <field name="saturday_end_morning" widget="float_time" invisible="not saturday_study_morning"/>
+                                </group>
+                                <group>
+                                    <field name="saturday_study_evening"/>
+                                    <field name="saturday_start_evening" widget="float_time" invisible="not saturday_study_evening"/>
+                                    <field name="saturday_end_evening" widget="float_time" invisible="not saturday_study_evening"/>
+                                </group>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_timetable_class_condition" model="ir.actions.act_window">
+        <field name="name">Global Class Conditions</field>
+        <field name="res_model">timetable.class.condition</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_timetable_class_condition" name="Global Class Rules" parent="menu_timetable_generation_config" action="action_timetable_class_condition" sequence="3"/>
+
+    <!-- ================== Module Rules ================== -->
+    <record id="view_timetable_module_rule_form" model="ir.ui.view">
+        <field name="name">timetable.module.rule.form</field>
+        <field name="model">timetable.module.rule</field>
+        <field name="arch" type="xml">
+            <form string="Module Rule">
+                <sheet>
+                    <group>
+                        <field name="subject_id"/>
+                    </group>
+                    <group>
+                        <group string="Assignments">
+                            <field name="academic_stage_id"/>
+                            <field name="group_ids" widget="many2many_tags" domain="[('standard_id.standard_id', '=', academic_stage_id)]"/>
+                            <field name="hours_per_week"/>
+                            <field name="hours_per_session"/>
+                            <field name="allow_multiple_sessions_per_day"/>
+                        </group>
+                        <group string="Synchronized (Parallel Modules)">
+                            <field name="is_synchronized"/>
+                            <field name="synchronized_subject_ids" widget="many2many_tags" invisible="not is_synchronized" required="is_synchronized"/>
+                        </group>
+                        <group string="Advanced Constraints">
+                            <field name="required_room_type_id"/>
+                            <field name="min_days_between"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_timetable_module_rule_list" model="ir.ui.view">
+        <field name="name">timetable.module.rule.list</field>
+        <field name="model">timetable.module.rule</field>
+        <field name="arch" type="xml">
+            <list string="Module Rules">
+                <field name="subject_id"/>
+                <field name="academic_stage_id"/>
+                <field name="group_ids" widget="many2many_tags"/>
+                <field name="hours_per_week"/>
+                <field name="is_synchronized"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="action_timetable_module_rule" model="ir.actions.act_window">
+        <field name="name">Module Rules</field>
+        <field name="res_model">timetable.module.rule</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_timetable_module_rule" name="Module Rules" parent="menu_timetable_generation_config" action="action_timetable_module_rule" sequence="4"/>
+
+    <!-- ================== Teacher Global Condition ================== -->
+    
+    <record id="view_timetable_teacher_global_condition_form" model="ir.ui.view">
+        <field name="name">timetable.teacher.global.condition.form</field>
+        <field name="model">timetable.teacher.global.condition</field>
+        <field name="arch" type="xml">
+            <form string="Global Teacher Condition">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="min_hours_per_day"/>
+                        <field name="max_hours_per_day"/>
+                        <field name="mandatory_free_days_count"/>
+                        <field name="allowed_gaps"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_timetable_teacher_global_condition" model="ir.actions.act_window">
+        <field name="name">Global Teacher Conditions</field>
+        <field name="res_model">timetable.teacher.global.condition</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_timetable_teacher_global_condition" name="Global Teacher Rules" parent="menu_timetable_generation_config" action="action_timetable_teacher_global_condition" sequence="5"/>
+
+    <!-- ================== Teacher Specific Condition ================== -->
+    <record id="view_timetable_teacher_specific_condition_form" model="ir.ui.view">
+        <field name="name">timetable.teacher.specific.condition.form</field>
+        <field name="model">timetable.teacher.specific.condition</field>
+        <field name="arch" type="xml">
+            <form string="Specific Teacher Condition">
+                <sheet>
+                    <group>
+                        <field name="teacher_id"/>
+                    </group>
+                    <group>
+                        <field name="has_specific_free_days"/>
+                    </group>
+                    <group string="Free Days" invisible="not has_specific_free_days">
+                        <group>
+                            <field name="free_day_sunday"/>
+                            <field name="free_day_monday"/>
+                            <field name="free_day_tuesday"/>
+                            <field name="free_day_wednesday"/>
+                        </group>
+                        <group>
+                            <field name="free_day_thursday"/>
+                            <field name="free_day_friday"/>
+                            <field name="free_day_saturday"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="has_custom_time_window"/>
+                    </group>
+                    <group string="Time Windows" invisible="not has_custom_time_window">
+                        <group string="Sunday" col="4" colspan="2">
+                            <field name="sunday_morning"/>
+                            <div invisible="not sunday_morning" colspan="2">
+                                <field name="sunday_morning_start" widget="float_time" class="oe_inline"/> - <field name="sunday_morning_end" widget="float_time" class="oe_inline"/>
+                            </div>
+                            <field name="sunday_evening"/>
+                            <div invisible="not sunday_evening" colspan="2">
+                                <field name="sunday_evening_start" widget="float_time" class="oe_inline"/> - <field name="sunday_evening_end" widget="float_time" class="oe_inline"/>
+                            </div>
+                        </group>
+                        <group string="Monday" col="4" colspan="2">
+                            <field name="monday_morning"/>
+                            <div invisible="not monday_morning" colspan="2">
+                                <field name="monday_morning_start" widget="float_time" class="oe_inline"/> - <field name="monday_morning_end" widget="float_time" class="oe_inline"/>
+                            </div>
+                            <field name="monday_evening"/>
+                            <div invisible="not monday_evening" colspan="2">
+                                <field name="monday_evening_start" widget="float_time" class="oe_inline"/> - <field name="monday_evening_end" widget="float_time" class="oe_inline"/>
+                            </div>
+                        </group>
+                        <group string="Tuesday" col="4" colspan="2">
+                            <field name="tuesday_morning"/>
+                            <div invisible="not tuesday_morning" colspan="2">
+                                <field name="tuesday_morning_start" widget="float_time" class="oe_inline"/> - <field name="tuesday_morning_end" widget="float_time" class="oe_inline"/>
+                            </div>
+                            <field name="tuesday_evening"/>
+                            <div invisible="not tuesday_evening" colspan="2">
+                                <field name="tuesday_evening_start" widget="float_time" class="oe_inline"/> - <field name="tuesday_evening_end" widget="float_time" class="oe_inline"/>
+                            </div>
+                        </group>
+                        <group string="Wednesday" col="4" colspan="2">
+                            <field name="wednesday_morning"/>
+                            <div invisible="not wednesday_morning" colspan="2">
+                                <field name="wednesday_morning_start" widget="float_time" class="oe_inline"/> - <field name="wednesday_morning_end" widget="float_time" class="oe_inline"/>
+                            </div>
+                            <field name="wednesday_evening"/>
+                            <div invisible="not wednesday_evening" colspan="2">
+                                <field name="wednesday_evening_start" widget="float_time" class="oe_inline"/> - <field name="wednesday_evening_end" widget="float_time" class="oe_inline"/>
+                            </div>
+                        </group>
+                        <group string="Thursday" col="4" colspan="2">
+                            <field name="thursday_morning"/>
+                            <div invisible="not thursday_morning" colspan="2">
+                                <field name="thursday_morning_start" widget="float_time" class="oe_inline"/> - <field name="thursday_morning_end" widget="float_time" class="oe_inline"/>
+                            </div>
+                            <field name="thursday_evening"/>
+                            <div invisible="not thursday_evening" colspan="2">
+                                <field name="thursday_evening_start" widget="float_time" class="oe_inline"/> - <field name="thursday_evening_end" widget="float_time" class="oe_inline"/>
+                            </div>
+                        </group>
+                        <group string="Friday" col="4" colspan="2">
+                            <field name="friday_morning"/>
+                            <div invisible="not friday_morning" colspan="2">
+                                <field name="friday_morning_start" widget="float_time" class="oe_inline"/> - <field name="friday_morning_end" widget="float_time" class="oe_inline"/>
+                            </div>
+                            <field name="friday_evening"/>
+                            <div invisible="not friday_evening" colspan="2">
+                                <field name="friday_evening_start" widget="float_time" class="oe_inline"/> - <field name="friday_evening_end" widget="float_time" class="oe_inline"/>
+                            </div>
+                        </group>
+                        <group string="Saturday" col="4" colspan="2">
+                            <field name="saturday_morning"/>
+                            <div invisible="not saturday_morning" colspan="2">
+                                <field name="saturday_morning_start" widget="float_time" class="oe_inline"/> - <field name="saturday_morning_end" widget="float_time" class="oe_inline"/>
+                            </div>
+                            <field name="saturday_evening"/>
+                            <div invisible="not saturday_evening" colspan="2">
+                                <field name="saturday_evening_start" widget="float_time" class="oe_inline"/> - <field name="saturday_evening_end" widget="float_time" class="oe_inline"/>
+                            </div>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_timetable_teacher_specific_condition" model="ir.actions.act_window">
+        <field name="name">Specific Teacher Conditions</field>
+        <field name="res_model">timetable.teacher.specific.condition</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_timetable_teacher_specific_condition" name="Specific Teacher Rules" parent="menu_timetable_generation_config" action="action_timetable_teacher_specific_condition" sequence="6"/>
+
+    <!-- Inherit Time Table Form to add Draft/Validated lifecycle -->
+    <record id="view_time_table_form_inherited_creator" model="ir.ui.view">
+        <field name="name">time.table.form.inherited.creator</field>
+        <field name="model">time.table</field>
+        <field name="inherit_id" ref="timetable.view_time_table_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//sheet" position="before">
+                <header>
+                    <button name="%(timetable_creator.action_open_force_assign_wizard)d" string="Force Assign Slot" type="action" class="btn-warning" invisible="state == 'validated'"/>
+                    <button name="%(timetable_creator.action_report_class_timetable_men)d" string="Print MEN Timetable" type="action" class="btn-secondary"/>
+                    <button name="action_validate" string="Validate Final Version" type="object" class="btn-primary" invisible="state == 'validated'"/>
+                    <button name="action_draft" string="Reset to Draft" type="object" invisible="state == 'draft'"/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+            </xpath>
+            <xpath expr="//field[@name='year_id']" position="after">
+                <field name="version_name"/>
+            </xpath>
+            <xpath expr="//field[@name='timetable_ids']/list/field[@name='class_room_id']" position="after">
+                <field name="state" widget="badge" decoration-warning="state == 'needs_reschedule'" decoration-success="state == 'assigned'"/>
+                <field name="pin_level" widget="badge" decoration-danger="pin_level == 'locked'" decoration-warning="pin_level == 'pinned'" decoration-info="pin_level == 'normal'"/>
+                <field name="pinned_reason" optional="hide"/>            </xpath>
+            <xpath expr="//notebook" position="inside">
+                <page string="2D Matrix View" name="matrix_view_page">
+                    <field name="matrix_html_view" widget="timetable_matrix" nolabel="1" readonly="1"/>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Inherit Time Table List to show Version and State -->
+    <record id="view_time_table_list_inherited_creator" model="ir.ui.view">
+        <field name="name">time.table.list.inherited.creator</field>
+        <field name="model">time.table</field>
+        <field name="inherit_id" ref="timetable.view_time_table_list"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='year_id']" position="after">
+                <field name="version_name"/>
+                <field name="state" widget="badge" 
+                       decoration-success="state == 'validated'" 
+                       decoration-info="state == 'draft'"/>
+            </xpath>
+        </field>
+    </record>
+    <!-- Inherit Search View to add Group By -->
+    <record id="view_time_table_search_inherited_creator" model="ir.ui.view">
+        <field name="name">time.table.search.inherited.creator</field>
+        <field name="model">time.table</field>
+        <field name="inherit_id" ref="timetable.timetable_search"/>
+        <field name="arch" type="xml">
+            <xpath expr="//search" position="inside">
+                <group expand="0" string="Group By">
+                    <filter string="Academic Stage" name="group_by_academic_stage" context="{'group_by':'academic_stage_id'}"/>
+                    <filter string="Academic Class" name="group_by_standard" context="{'group_by':'standard_id'}"/>
+                    <filter string="Year" name="group_by_year" context="{'group_by':'year_id'}"/>
+                    <filter string="Version Name" name="group_by_version" context="{'group_by':'version_name'}"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

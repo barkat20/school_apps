@@ -1,0 +1,8 @@
+
+    <!-- Action View 2 Of Form View Of Student Information -->
+    <record id="action_student_student_form_view_2" model="ir.actions.act_window.view">
+        <field name="view_mode">form</field>
+        <field eval="22" name="sequence" />
+        <field name="view_id" ref="view_student_student_form_2" />
+        <field name="act_window_id" ref="action_student_student_form_2" />
+    </record>

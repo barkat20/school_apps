@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_timetable_generation_progress_form" model="ir.ui.view">
+        <field name="name">timetable.generation.progress.form</field>
+        <field name="model">timetable.generation.progress</field>
+        <field name="arch" type="xml">
+            <form string="Generation Progress" class="o_timetable_generation_progress">
+                
+                <sheet>
+                    <h2>Timetable Optimizer Engine</h2>
+                    <group>
+                        <field name="state" readonly="1" widget="badge" decoration-info="state == 'generating'" decoration-success="state == 'done'" decoration-danger="state == 'error' or state == 'cancelled'"/>
+                        <field name="stage_name" readonly="1"/>
+                        <field name="progress" widget="auto_refresh_progressbar" readonly="1"/>
+                        <field name="cancel_requested" invisible="1"/>
+                    </group>
+                    
+                    <div invisible="state not in ['error', 'cancelled']">
+                        <field name="log_messages" readonly="1"/>
+                    </div>
+                </sheet>
+                <footer>
+                    <button name="action_check_progress" string="Refresh Progress" type="object" class="btn-info" icon="fa-refresh" invisible="state != 'generating'"/>
+                    <button name="action_cancel_generation" string="Cancel Generation" type="object" class="btn-danger" invisible="state != 'generating'"/>
+                    <button name="action_view_results" string="View Final Timetable!" type="object" class="btn-primary" invisible="state != 'done'"/>
+                    <button special="cancel" string="Close" class="btn-secondary"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>
